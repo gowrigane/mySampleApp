@@ -1,0 +1,69 @@
+<html><body><center>
+
+    <form action="display.php" enctype="multipart/form-data" method="POST">
+    <h1>Registration form</h1>
+    <table cellspacing="12">
+    <tbody>
+        <tr>
+            <td>Name</td><td>:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>Email</td><td>:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+
+        <tr>
+            <td> UserName</td><td>:</td>
+            <td><input type="text" name="userName"></td>
+        </tr>
+        <tr>
+            <td>Password</td><td>:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter Password</td><td>:</td>
+            <td><input type="password" name="re-EnterPassword"></td>
+        </tr>
+        <tr>
+            <td>Address</td><td>:</td>
+            <td><textarea name="address" rows="2" cols="31"></textarea></td>
+        </tr>
+        <tr>
+            <td>Gender</td><td>:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </td></tr>
+            <td>Jr/Sr</td><td>:</td>
+            <td>
+                <input type="radio" name="jrsr" value="jr"> Junior
+                <input type="radio" name="jrsr" value="sr"> Senior
+            </td></tr>
+        <tr>
+            <td>District Name</td><td>:</td>
+            <td><select name="districtName">
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="salem">Salem</option>
+                <option value="trichy">Trichy</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Events</td><td>:</td>
+            <td><input type="checkbox" name="events[]" value="wedding">Wedding
+                <input type="checkbox" name="events[]" value="corporate">Corporate
+                <input type="checkbox" name="events[]" value="social">Social</td>
+        </tr>
+        <tr>
+            <td></td><td></td><td>
+            <input type="button" name="register" value="Register"></td>
+            <td><input type="reset" name="reset"></td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+    </center>
+    </body>
+    </html>
